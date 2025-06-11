@@ -24,19 +24,6 @@ This is a simple yet elegant web-based Anime Info Database built with PHP and My
 - HTML/CSS (Frontend)
 - XAMPP or any local server (for testing)
 
-## 📁 Project Structure
-
-anime-db/
-├── css/
-│ └── style.css
-├── uploads/
-│ └── [anime images]
-├── db.php
-├── index.php
-├── anime.php
-└── README.md
-
-
 ## 🧑‍💻 Setup Instructions
 
 1. Clone the repository:
