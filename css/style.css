@@ -1,0 +1,233 @@
+/* Reset & Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #f3e5f5, #ede7f6);
+    color: #333;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background-color: #7e57c2;
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    animation: fadeDown 0.7s ease;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+/* Search */
+.search-form {
+    margin: 20px auto;
+    text-align: center;
+    animation: fadeIn 1s ease;
+}
+
+.search-form input[type="text"] {
+    padding: 12px 20px;
+    width: 280px;
+    border-radius: 8px;
+    border: 1px solid #b39ddb;
+    font-size: 16px;
+    box-shadow: 0 2px 8px rgba(126, 87, 194, 0.15);
+}
+
+.search-form input[type="text"]:focus {
+    outline: none;
+    border-color: #7e57c2;
+    box-shadow: 0 0 8px #b39ddb;
+}
+
+.search-form button {
+    padding: 12px 25px;
+    background-color: #7e57c2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-form button:hover {
+    background-color: #5a3e93;
+}
+
+/* Anime Grid */
+.anime-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+    padding: 30px;
+}
+
+/* Anime Card */
+.anime-card {
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 0.5s ease-in-out;
+    text-align: center;
+}
+
+.anime-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+}
+
+.anime-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: 0.3s ease;
+    border-bottom: 3px solid #7e57c2;
+}
+
+.anime-card h3 {
+    padding: 12px;
+    font-size: 20px;
+    color: #6a1b9a;
+}
+
+.anime-card a {
+    display: block;
+    background-color: #7e57c2;
+    color: white;
+    text-decoration: none;
+    padding: 12px 0;
+    font-weight: bold;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.anime-card a:hover {
+    background-color: #5a3e93;
+}
+
+/* Anime Details View */
+.anime-detail {
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+    animation: fadeUp 0.8s ease;
+    text-align: center;
+}
+
+.anime-detail img {
+    width: 240px;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 16px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.anime-detail h2 {
+    font-size: 28px;
+    color: #6a1b9a;
+    margin-bottom: 10px;
+}
+
+.anime-detail p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+/* Back Button */
+.back-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 20px;
+    background-color: #7e57c2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.back-btn:hover {
+    background-color: #5a3e93;
+}
+
+/* Suggestion Panel */
+.suggestions {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #f3e5f5;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.suggestions h3 {
+    margin-bottom: 20px;
+    color: #6a1b9a;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #f8f0ff;
+    padding: 25px;
+    color: #777;
+    margin-top: 50px;
+    font-size: 15px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Tweaks */
+@media (max-width: 600px) {
+    .anime-detail img {
+        width: 100%;
+        height: auto;
+    }
+
+    .search-form input[type="text"] {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    .search-form button {
+        width: 80%;
+    }
+}
