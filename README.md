@@ -5,15 +5,14 @@ This is a simple yet elegant web-based Anime Info Database built with PHP and My
 ## 🌐 Features
 
 - 🔍 Search anime by name
-- 🎭 Filter anime by genre/category
 - 🖼️ View anime image and details
 - 📋 Episode count and genre info
 - 🧠 Suggestions panel on detail page
 - 💅 Clean responsive design with CSS animations
 
 ## 🚀 Live Preview
-
-*(Optional: Add GitHub Pages/Netlify/Vercel live link if hosted)*  
+![image](https://github.com/user-attachments/assets/a07d33a4-e3f0-45ea-8ac5-b27e7c1bc1a3)
+ 
 **Example:**  
 [Live Demo] https://github.com/HarshSonara/Anime-Db.git
 
